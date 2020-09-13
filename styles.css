@@ -104,7 +104,7 @@ img.resize {
   
   @keyframes typing {
     from { width: 0 }
-    to { width: 400px }
+    to { width: 390px }
   }
   
   @keyframes blink-caret {
