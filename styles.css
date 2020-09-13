@@ -181,13 +181,18 @@ img.resize {
     color: rgba(0, 0, 0);
     margin: 0 auto;
     margin-bottom: 10%;
-    animation: typing 3.5s steps(25,end) 1s 1 normal both,
-             blink-caret 600ms steps(25,end) infinite;
+    animation: typing 3.5s steps(27),
+             blink-caret 600ms steps(27) infinite;
+    width:27ch;
   }
   
   @keyframes typing {
-    from { width: 0 }
-    to { width: 74%}
+    0% {
+        width:0ch;
+    }
+    100% {
+        width:27ch;
+    }
   }
   
   @keyframes blink-caret {
