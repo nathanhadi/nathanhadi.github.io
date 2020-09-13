@@ -181,7 +181,7 @@ img.resize {
     color: rgba(0, 0, 0);
     margin: 0 auto;
     margin-bottom: 10%;
-    animation: typing 3.5s steps(27),
+    animation: typing 5s steps(27),
              blink-caret 600ms steps(27) infinite;
     width:27ch;
   }
@@ -199,3 +199,34 @@ img.resize {
     from, to { border-color: transparent }
     50% { border-color: rgba(0,255,0,.75); }
   }
+
+
+#container {
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+#text {
+	display: inline-block;
+	vertical-align: middle;
+	color: black;
+	letter-spacing: 2px;
+}
+
+#cursor {
+	display: inline-block;
+	vertical-align: middle;
+	width: 3px;
+	height: 30px;
+	background-color: rgba(0,255,0,.75);
+	animation: blink .75s step-end infinite;
+}
+
+@keyframes blink {
+	from, to { 
+		background-color: transparent 
+	}
+	50% { 
+		background-color: rgba(0,255,0,.75); 
+	}
+}
