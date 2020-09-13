@@ -96,6 +96,7 @@ p {
 } 
 .container:hover button {   
     opacity: 1;
+    background-color: white;
 }
 
 .leftcontainer {
