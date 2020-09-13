@@ -29,7 +29,7 @@ function Type() {
 	// If full sentence has been displayed then start to delete the sentence after some time
 	if(text === _CONTENT[_PART]) {
 		// Hide the cursor
-		_CURSOR.style.display = 'none';
+		//_CURSOR.style.display = 'none';
 
 		clearInterval(_INTERVAL_VAL);
 		setTimeout(function() {
