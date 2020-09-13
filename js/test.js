@@ -33,8 +33,8 @@ function Type() {
 
 		clearInterval(_INTERVAL_VAL);
 		setTimeout(function() {
-			_INTERVAL_VAL = setInterval(Delete, 50);
-		}, 1000);
+			_INTERVAL_VAL = setInterval(Delete, 100);
+		}, 3000);
 	}
 }
 
