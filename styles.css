@@ -44,7 +44,7 @@ p {
     text-align: left;
     font-size: 14px;
     position: relative;
-    top: -75px;
+    top: -10%;
 }
 
 .h6-4 {
@@ -66,7 +66,6 @@ p {
 .container {
     position: relative;  
     width:100%;
-    max-width:225px;
 }
 .container:before {
   content:"";
@@ -116,7 +115,7 @@ img.resize {
     max-height:30%;
     border-radius: 50%;
     margin-top: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 10%;
 }
 
 .vl {
@@ -178,14 +177,14 @@ img.resize {
     font-size: 24px;
     color: rgba(0, 0, 0);
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 10%;
     animation: typing 3.5s steps(25,end) 1s 1 normal both,
              blink-caret 600ms steps(25,end) infinite;
   }
   
   @keyframes typing {
     from { width: 0 }
-    to { width: 395px }
+    to { width: 74%}
   }
   
   @keyframes blink-caret {
