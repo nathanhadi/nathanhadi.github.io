@@ -1,100 +1,289 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nathan Hadi Portfolio</title>
+  <title>Nathan Hadi | Portfolio</title>
   <link rel="stylesheet" href="./css/styles.css" />
-  <link rel="stylesheet" href="./css/w3.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
-<div class="leftcontainer main-col">
-  <body>
-    <img class="resize" src="images/profile.jpg" />
-    <div id="container">
-      <div id="text"></div>
-      <div id="cursor"></div>
-      <script src="./js/test.js"></script>
-    </div>
-  </script>
-    <div>
-      <a href="https://github.com/nathanhadi" class="fa fa-github" target="_blank"></a>
-      <a href="https://www.linkedin.com/in/nathan-hadi-33a35b145/" class="fa fa-linkedin" target="_blank"></a>
-    </div>
-    <div>
-      <a href="mailto:hadi.nathan@gmail.com" class="fa fa-envelope">hadi.nathan@gmail.com </a>
-    </div>
-    <button class="w3-btn w3-light-grey w3-margin-top">
-      <a href="./images/Nathan_Hadi_Resume.pdf#toolbar=0" target="blank">Resume</a>
-    </button>
-  </body>
-</div>
-
-<span class="vl"></span>
-
-<div class="w3-main right-col">
-  <body>
-    <div class="w3-container">
-      <h1> About Me </h1>
-      <p>I graduated from the University of Illinois at Urbana-Champaign in 2021 with a degree in Computer Science. My interests include
-        Data Science, Machine Learning, Cybersecurity, Strategic Games, 
-        and Computer Vision.</p>
-    </div>
-
-    <hr style="width:100%;text-align:center;color:black;border-top: 2px solid black">
-
-    <div class="w3-container">  
-      <h1> Projects </h1>
-    </div>
-    <div class="w3-cell-row w3-container">
-      <div class="w3-cell">
-        <div class="container">
-          <img src="images/IlliniServices.png">
-          <button class="w3-btn" style="border: 2px solid black"><a href="https://github.com/nathanhadi/IlliniServices" target="_blank">View</a></button>
-        </div>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">NH</a>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+        <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      <div class="w3-cell">
-        <div class="container">
-          <img src="images/HauntedMansionAdventure.png">
-          <button class="w3-btn" style="border: 2px solid black"><a href="https://github.com/nathanhadi/AdventureTextGame" target="_blank">View</a></button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <img class="hero-image" src="images/headshot.jpg" alt="Nathan Hadi" />
+      <div class="hero-text">
+        <div id="container">
+          <div id="text"></div>
+          <div id="cursor"></div>
         </div>
-      </div>
-      <div class="w3-cell">
-        <div class="container">
-          <img src="images/Twitch.png">
-          <button class="w3-btn" style="border: 2px solid black"><a href="https://github.com/nathanhadi/TwitchBot" target="_blank">View</a></button>
+        <p class="hero-subtitle">Software Engineer | UIUC Computer Science Graduate</p>
+        <div class="hero-links">
+          <a href="https://github.com/nathanhadi" class="social-link" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/nathan-hadi-33a35b145/" class="social-link" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:hadi.nathan@gmail.com" class="social-link" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
         </div>
       </div>
     </div>
+  </section>
 
-    <hr style="width:100%;text-align:center;color:black;border-top: 2px solid black">
-
-    <div class="w3-container">
-      <h1> Professional Experience </h1>
-      <h4> Software Engineering Intern </h4>
-      <img src="images/tuitionio.png" style="height:20%;width:20%;position:relative;top:-40px;left:500px">
-      <h6>June 2020 - August 2020</h6>
-      <p class="p2">Worked on creating an automated system for file handling and parsing involving Amazon Web Services 
-        (S3, Lambda, DynamoDB) using Typescript and Node.js on Serverless system.</p>
-
-      <h4> Software Intern </h4>
-      <img src="images/tarana.jpg" style="height:15%;width:15%;position:relative;top:-40px;left:520px">
-      <h6>May 2019 - August 2019</h6>
-      <p class="p3">Created YANG models using the YANG data modeling language to create clearer data pathways 
-        for users to search for collection functions they need to grab data from a stat proxy. Also created python test 
-        scripts that collect data features obtained from a stat proxy that collects data from a wireless node over a 
-        period of time to confirm that the node is working.</p>
-
-      <h4> IT Workstation and Network Support Employee </h4>
-      <img src="images/illinois.png" style="height:25%;width:25%;position:relative;top:-40px;left:490px">
-      <h6 class="h6-4">February 2019 - Present</h6>
-      <p class="p4">Responsible for system administration (installing and maintaining staff computers, printers, 
-        and all Windows operating systems) and providing user support to library users and workers through 
-        an OTRS ticket system.</p>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <p>I graduated from the University of Illinois at Urbana-Champaign in 2021 with a degree in Computer Science. My interests include Data Science, Machine Learning, Cybersecurity, Strategic Games, and Computer Vision.</p>
+      </div>
     </div>
-  </body>
-</div>
+  </section>
 
+  <!-- Experience Section -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Professional Experience</h2>
+      <div class="experience-timeline">
+        <div class="experience-card">
+          <div class="experience-header">
+            <div class="experience-title-row">
+              <div>
+                <h3>Software Development Engineer</h3>
+                <p class="experience-company">Amazon</p>
+                <p class="experience-location">Sunnyvale, CA</p>
+              </div>
+              <img src="images/amazon.jpg" alt="Amazon" class="experience-logo">
+            </div>
+            <p class="experience-date">June 2021 - January 2023</p>
+          </div>
+          <p class="experience-description">SDE for Alexa Automotive SDK team in Amazon Smart Vehicles working with embedded systems.</p>
+          <ul class="experience-bullets">
+            <li>Created design proposals with architectural, sequence, and state diagrams</li>
+            <li>Wrote C++ and Java implementation and tests for features such as Offline Local Navigation and Connectivity for Automotive OEMs</li>
+            <li>Resolved issues from OEMs to support Linux and Android platforms for our product</li>
+          </ul>
+        </div>
 
+        <div class="experience-card">
+          <div class="experience-header">
+            <div class="experience-title-row">
+              <div>
+                <h3>Software Engineering Intern</h3>
+                <p class="experience-company">Tuition.io</p>
+                <p class="experience-location">Santa Monica, CA</p>
+              </div>
+              <img src="images/tuitionio.png" alt="TuitionIO" class="experience-logo">
+            </div>
+            <p class="experience-date">June 2020 - August 2020</p>
+          </div>
+          <p class="experience-description">Software Engineering Intern for the Engineering Team of Tuition.io.</p>
+          <ul class="experience-bullets">
+            <li>Created an automated system for file handling and parsing involving Amazon Web Services (S3, Lambda, DynamoDB) using Typescript and Node.js on Serverless system</li>
+          </ul>
+        </div>
 
+        <div class="experience-card">
+          <div class="experience-header">
+            <div class="experience-title-row">
+              <div>
+                <h3>Software Engineer Intern</h3>
+                <p class="experience-company">Tarana Wireless</p>
+                <p class="experience-location">Santa Clara, CA</p>
+              </div>
+              <img src="images/tarana.jpg" alt="Tarana" class="experience-logo">
+            </div>
+            <p class="experience-date">May 2019 - August 2019</p>
+          </div>
+          <p class="experience-description">Software Engineering Intern for the Digital Signal Processing (DSP) team of Tarana Wireless.</p>
+          <ul class="experience-bullets">
+            <li>Developed YANG models using the YANG data modeling language to create clearer data pathways for data from a stat proxy</li>
+            <li>Created python test scripts that collect data features obtained from a wireless node over a period of time to confirm that the node is working</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="experience-timeline">
+        <div class="experience-card">
+          <div class="experience-header">
+            <div class="experience-title-row">
+              <div>
+                <h3>Master of Science in Computer Science</h3>
+                <p class="experience-company">University of Illinois at Urbana-Champaign</p>
+                <p class="experience-location">Urbana-Champaign, IL</p>
+              </div>
+              <img src="images/uiuc.svg" alt="University of Illinois" class="experience-logo">
+            </div>
+            <p class="experience-date">2025 - Present</p>
+          </div>
+        </div>
+
+        <div class="experience-card">
+          <div class="experience-header">
+            <div class="experience-title-row">
+              <div>
+                <h3>Bachelor of Science in Computer Science</h3>
+                <p class="experience-company">University of Illinois at Urbana-Champaign</p>
+                <p class="experience-location">Urbana-Champaign, IL</p>
+              </div>
+              <img src="images/uiuc.svg" alt="University of Illinois" class="experience-logo">
+            </div>
+            <p class="experience-date">2017 - 2021</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        
+        <div class="project-card">
+          <div class="project-image-container">
+            <img src="images/TwitchAI1.png" alt="Twitch AI Assistant" class="project-image">
+            <div class="project-overlay">
+              <a href="https://github.com/nathanhadi/Twitch-AI-Assistant" target="_blank" class="project-link">
+                <i class="fab fa-github"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Twitch Streamer AI Assistant</h3>
+            <div class="project-tools">
+              <span class="tool-tag">Python</span>
+              <span class="tool-tag">JavaScript</span>
+              <span class="tool-tag">AWS</span>
+              <span class="tool-tag">Docker</span>
+              <span class="tool-tag">ReactTS</span>
+              <span class="tool-tag">Gemini</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">C++</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Technologies</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">Android</span>
+            <span class="skill-tag">iOS</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">React</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>AWS</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">DynamoDB</span>
+            <span class="skill-tag">Lambda</span>
+            <span class="skill-tag">S3</span>
+            <span class="skill-tag">Secrets Manager</span>
+            <span class="skill-tag">Amplify</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="section">
+    <div class="container">
+      <h2 class="section-title">Resume</h2>
+      <div class="resume-content">
+        <p>Download my resume to view my complete work history, skills, and education.</p>
+        <a href="Nathan_Hadi_resume.pdf" target="_blank" class="btn-primary">
+          <i class="fas fa-download"></i> Download Resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-content">
+        <p>Feel free to reach out if you'd like to connect or collaborate!</p>
+        <div class="contact-links">
+          <a href="mailto:hadi.nathan@gmail.com" class="contact-link">
+            <i class="fas fa-envelope"></i>
+            <span>nathanhadi.sde@gmail.com</span>
+          </a>
+          <a href="https://www.linkedin.com/in/nathan-hadi-33a35b145/" target="_blank" class="contact-link">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/nathanhadi" target="_blank" class="contact-link">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Nathan Hadi. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./js/test.js"></script>
+  <script src="./js/main.js"></script>
+</body>
 </html>
