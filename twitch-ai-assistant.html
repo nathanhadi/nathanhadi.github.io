@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twitch Streamer AI Assistant | Nathan Hadi</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">NH</a>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="index.html#experience" class="nav-link">Experience</a></li>
+        <li class="nav-item"><a href="index.html#education" class="nav-link">Education</a></li>
+        <li class="nav-item"><a href="index.html#projects" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="index.html#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="index.html#resume" class="nav-link">Resume</a></li>
+        <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Project Detail Section -->
+  <section class="section" style="padding-top: 100px;">
+    <div class="container">
+      <a href="index.html#projects" style="color: var(--primary-color); text-decoration: none; margin-bottom: 20px; display: inline-flex; align-items: center; gap: 8px; font-weight: 500; transition: color 0.3s ease;" onmouseover="this.style.color='var(--accent-blue)'" onmouseout="this.style.color='var(--primary-color)'">
+        <i class="fas fa-arrow-left"></i> Back to Projects
+      </a>
+      
+      <h1 style="font-size: 2.5rem; margin: 30px 0; color: var(--text-dark); font-weight: 700;">Twitch Streamer AI Assistant</h1>
+      
+      <div style="display: flex; gap: 30px; margin: 40px 0; flex-wrap: wrap; align-items: flex-start;">
+        <div style="flex: 1; min-width: 300px;">
+          <img src="images/TwitchAI1.png" alt="Twitch Streamer AI Assistant" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-bottom: 20px;">
+          <img src="images/TwitchAI2.png" alt="Twitch Streamer AI Assistant Screenshot" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        </div>
+        <div style="flex: 1; min-width: 300px;">
+          <div style="background-color: var(--bg-white); padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); margin-bottom: 20px;">
+            <h3 style="font-size: 1.5rem; color: var(--text-dark); margin-bottom: 15px; font-weight: 600;">Project Overview</h3>
+            <p style="color: var(--text-light); line-height: 1.8; font-size: 1rem;">An intelligent AI assistant designed to help Twitch streamers manage their channels more effectively. The system leverages AI to automate various streaming tasks and enhance the viewer experience.</p>
+            
+            <h3 style="font-size: 1.3rem; color: var(--text-dark); margin-top: 30px; margin-bottom: 15px; font-weight: 600;">Technologies Used</h3>
+            <div class="project-tools" style="margin-top: 15px;">
+              <span class="tool-tag">Python</span>
+              <span class="tool-tag">JavaScript</span>
+              <span class="tool-tag">AWS</span>
+              <span class="tool-tag">Docker</span>
+              <span class="tool-tag">ReactTS</span>
+              <span class="tool-tag">Gemini</span>
+            </div>
+          </div>
+          
+          <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+            <a href="https://github.com/nathanhadi/Twitch-AI-Assistant" target="_blank" class="btn-primary">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Detailed Content Sections -->
+      <div style="max-width: 900px; margin: 60px auto;">
+        <h2 style="font-size: 2rem; color: var(--text-dark); margin-bottom: 20px; font-weight: 700; padding-bottom: 10px; border-bottom: 3px solid var(--primary-color);">Features</h2>
+        <ul class="experience-bullets">
+          <li>AI-powered chat moderation and response generation</li>
+          <li>Real-time stream analytics and insights</li>
+          <li>Automated content management and alerts</li>
+          <li>Integration with Twitch API for seamless functionality</li>
+        </ul>
+        
+        <h2 style="font-size: 2rem; color: var(--text-dark); margin-top: 50px; margin-bottom: 20px; font-weight: 700; padding-bottom: 10px; border-bottom: 3px solid var(--primary-color);">Technical Details</h2>
+        <p style="color: var(--text-light); line-height: 1.8; font-size: 1rem; margin-bottom: 15px;">The Twitch Streamer AI Assistant is built using a modern tech stack combining Python and Javascript for backend services and React with TypeScript for the frontend. The application utilizes AWS services for cloud infrastructure, Docker for containerization, and integrates with Google's Gemini AI for intelligent features.</p>
+        <p style="color: var(--text-light); line-height: 1.8; font-size: 1rem;">The system is designed to be scalable and maintainable, with a modular architecture that allows for easy extension and customization based on streamer needs.</p>
+        
+        <h2 style="font-size: 2rem; color: var(--text-dark); margin-top: 50px; margin-bottom: 20px; font-weight: 700; padding-bottom: 10px; border-bottom: 3px solid var(--primary-color);">Key Challenges & Solutions</h2>
+        <p style="color: var(--text-light); line-height: 1.8; font-size: 1rem; margin-bottom: 15px;"><strong style="color: var(--text-dark);">Challenge:</strong> Real-time processing of chat messages while maintaining low latency for stream interactions.</p>
+        <p style="color: var(--text-light); line-height: 1.8; font-size: 1rem; margin-bottom: 20px;"><strong style="color: var(--text-dark);">Solution:</strong> Implemented efficient message queuing and processing pipelines using AWS Lambda functions, allowing for asynchronous processing without blocking the main chat interface.</p>
+        <p style="color: var(--text-light); line-height: 1.8; font-size: 1rem; margin-bottom: 15px;"><strong style="color: var(--text-dark);">Challenge:</strong> Integrating multiple APIs (Twitch, Gemini AI) while maintaining code quality and error handling.</p>
+        <p style="color: var(--text-light); line-height: 1.8; font-size: 1rem;"><strong style="color: var(--text-dark);">Solution:</strong> Developed a robust API abstraction layer with comprehensive error handling and retry logic, ensuring reliable integration with external services.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Nathan Hadi. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
+
