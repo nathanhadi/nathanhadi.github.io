@@ -528,6 +528,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  text-align: center;
 }
 
 .project-content h3 {
@@ -535,6 +536,7 @@ body {
   color: var(--text-dark);
   font-weight: 600;
   margin: 0;
+  text-align: center;
 }
 
 .project-tools {
@@ -542,6 +544,7 @@ body {
   flex-wrap: wrap;
   gap: 8px;
   margin-top: auto;
+  justify-content: center;
 }
 
 .tool-tag {
