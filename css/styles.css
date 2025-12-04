@@ -390,6 +390,21 @@ body {
 }
 
 /* ====================================
+   Certifications Section
+   ==================================== */
+
+.certifications-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* ====================================
    Skills Section
    ==================================== */
 
@@ -480,6 +495,12 @@ body {
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
+}
+
+.certification-image {
+  object-fit: contain;
+  background-color: var(--bg-light);
+  padding: 10px;
 }
 
 .project-card:hover .project-image {
